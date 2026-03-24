@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fale Comigo</title>
+    <link rel="icon" href="imagens/img_icone.png">
+    <style>
+        fieldset {
+            width: 400px;
+            margin: auto;
+            border-radius: 10px;
+            border-color: black;
+        }
+
+
+        legend {
+            text-align: center;
+            font-weight: bold;
+            background-color: #63b4e2;
+            padding: 5px 10px;
+            border: 2px solid #555;
+            border-radius: 5px;
+        }
+
+        .container {
+            display: flex;
+            gap: 40px;
+            justify-content: center;
+            margin-top: 40px;
+        }
+
+        button {
+            padding: 10px 20px;
+            border: none;
+            background-color: black;
+            color: white;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        .redes a {
+            color: #000;
+            text-decoration: none;
+        }
+
+        .redes a:hover {
+            color: #e50914;
+            text-decoration: none;
+        }
+
+        nav {
+            text-align: center;
+            margin: 20px;
+            background-color: #6aad76;
+            padding: 10px;
+            border-radius: 10px;
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 12;
+            width: 50%;
+            margin: auto;
+        }
+
+        nav a {
+            text-decoration: none;
+            color: black;
+            font-weight: bold;
+            margin: 0 10px;
+
+        }
+
+        nav a:hover {
+            color: #4eb4f0
+        }
+
+        hr {
+            border: none;
+            height: 1px;
+            background-color: #333;
+            width: 50%;
+        }
+
+        body {
+            background-color: #8ec1df;
+            padding: 20px;
+
+
+        }
+
+        h1 {
+            text-align: center;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        h2 {
+            text-align: center;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        footer {
+            text-align: center;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        .img_falecomigo {
+            border: 3px solid black;
+            border-radius: 15px;
+            display: block;
+            margin: auto;
+            box-shadow: 0px 5px 15px rgba(0, 0, 0.3);
+            width: 200px;
+        }
+
+        textarea {
+            resize: none;
+            background-color: #8edfdf;
+            color: #000;
+            border: 1px solid #333;
+        }
+         #mod5 {
+           background-color: #50bfff; 
+
+
+        }
+         main{
+            height: 20vh;
+        }
+        input{
+             background-color: #8edfdf;
+            color: #000;
+            border: 1px solid #333;  
+        }
+        input:focus, textarea:focus{
+            outline:none;
+            border: 2px solid #0984e3;
+            background-color: #ffffff;
+        }
+    </style>
+</head>
+
+<body>
+    <fieldset id="mod5">
+        <h1> Fale Comigo</h1>
+    </fieldset>
+
+    <h2> Menu </h2>
+    <nav>
+        <a href="index.html" title="clique aqui!"> Início </a> |
+        <a href="projetos.html" title="clique  aqui!"> Meus Projetos </a> |
+        <a href="sobre.html" title="clique aqui!">Sobre </a> |
+        <a href="noticias_e_novidades.html" title="clique aqui!">Noticias</a>
+    </nav>
+    <br>
+    <hr>
+    <img src="imagens/img_fale_comigo.jpg" alt="Imagem fale comigo" width="300" class="img_falecomigo">
+    <form action="agradecimento.html">
+
+        <div class="container">
+            <fieldset>
+                <legend> Fale Comigo</legend>
+                <label for="nome">Nome:</label><br>
+                <input type="text" id="nome" name="nome" placeholder="Digite seu nome aqui"
+                    pattern="[A-ZÁÀÂÃÉÊÍÓÔÕÚÇ][a-záàâãéêíóôõúç]+( [A-ZÁÀÂÃÉÊÍÓÔÕÚÇ][a-záàâãéêíóôõúç]+)*"
+                    title="Digite seu nome com iniciais maiúsculas (ex: João Silva)" required>
+                <br>
+                <br>
+                <label for="email">email: </label>
+                <br>
+                <input type="email" id="email" name="email" placeholder="Digite seu e-mail aqui" required>
+                <br>
+
+                <br>
+
+                <label for="comentario">Comentário:</label><br>
+
+                <textarea id="comentario" rows="5" cols="40" placeholder="Digite seu comentário aqui..." maxlength="300"
+                    required>
+</textarea>
+                <p id="contador">Máximo 300 caracteres </p>
+
+                <br>
+                <button type="submit"> Enviar</button>
+
+            </fieldset>
+    </form>
+    <fieldset class="redes">
+        <legend>Minhas Redes Sociais </legend>
+        <p>📸 Instagram:
+            <a href="https://www.instagram.com/_miguelsobral_" target="_blank">
+                _miguelsobral_
+            </a>
+        </p>
+        <p>💻 Github:
+            <a href="https://github.com/MiguelSobral20" target="_blank"> MiguelSobral20 </a>
+        <p>✉️ Email:
+            <a href="https://mail.google.com/mail/?view=cm&to=miguelsobralm@gmail.com" target="_blank">
+                miguelsobralm@gmail.com
+            </a>
+        </p>
+        <p>🔗LinkedIn:
+            <a href="https://www.linkedin.com/in/miguel-sobral-1247012a8" target="_blank">
+                Miguel Sobral </a>
+        </p>
+    </fieldset>
+
+    </div>
+   <main></main>
+    <footer>
+        <p>&copy; 2026 - Miguel Sobral. Todos os direitos reservados.</p>
+    </footer>
+</body>
+
+</html>
